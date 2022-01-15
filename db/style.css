@@ -1,0 +1,19 @@
+body{
+text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+    margin-left: auto; 
+    margin-right: auto;
+
+
+}
+#formTable , #formTable td{
+    border: none;
+}
+button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}

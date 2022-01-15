@@ -1,0 +1,265 @@
+body {
+  background: #222D32;
+  font-family: 'Roboto', sans-serif;
+  color: #f3f3f3;
+
+}
+
+.page_title {
+  margin-left: 5%;
+}
+
+/*------------------------------Log In-------------------------------------------*/
+hr.navline {
+  border-top: thin solid #ffffff;
+  width: 100%;
+}
+
+.container_parent {
+  margin-top: 50px;
+  margin-top: 60px;
+  padding: 30px;
+  padding-right:200px;
+  padding-left: 200px;
+  background-color: #6c757d;
+}
+
+/*Sign In: Admin*/
+.container_parent h1{
+  text-align: center;
+}
+
+.container_child {
+  background-color: #f2f7f2;
+  color: #121212
+}
+
+.container_child .col {
+  margin-top: 20px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+/*------------------------------Data webpage-------------------------------------------*/
+/*New data input button*/
+.new_user {
+  position: absolute;
+  right: 5%;
+  top: 0px;
+  margin-top: 3%;
+  margin-left: 5%;
+  border: thin solid #0DB8DE;
+  border-radius: 10px;
+  padding: 4px;;
+}
+
+.new_user:hover{
+  background-color: #0DB8DE;
+}
+
+/*------------------------------Navagation Bar------------------------------------------*/
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1A2226;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a, h2 {
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+  }
+  .sidenav h2 {
+    font-size: 30px;
+    color: #969696;
+  }
+
+  .sidenav a {
+    font-size: 24px;
+    color: #ffffff;
+  }
+
+  .sidenav h1{
+    color: transparent; 
+    font-size: 35px;
+    font-weight: bold;
+  -webkit-text-stroke: thin #f3f3f3;
+  }
+  
+  .sidenav a:hover {
+    color: #0DB8DE;
+    text-decoration: underline #00a0f0;
+    font-weight: bolder;
+  }
+
+  .active{
+    background: #303030;
+    border-left: thick solid #00a0f0;
+}
+  
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .log_out_btn{
+    border: thin solid #0DB8DE;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+    margin: 30px;
+  }
+
+  #log_out_btn:hover {
+    background-color: #0DB8DE;
+    color: #f0f0f0;
+  }
+
+/*------------------------------Search Bar------------------------------------------*/
+#myInput{
+  width: 45%;
+  background: #f3f3f3;
+
+}
+#searchBar{
+  text-align: center;
+}
+/*------------------------------Table-------------------------------------------*/
+
+  
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px auto 25px auto;
+    width:90%;
+    min-width: 400px;
+}
+
+.styled-table thead tr {
+  background-color: #00011f;
+  color: #0DB8DE;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: thin solid #f3f3f3;
+  background: #343a40;
+  color: #f3f3f3;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #00a0f0;
+
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #00a0f0;
+}
+
+
+
+
+
+/*------------------------------Overlay form (edit, delete and new data input)-------------------------------------------*/
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+
+}
+
+.modal-title {
+  border-bottom: thin solid #121212;
+  padding: 20px 30px;
+}
+
+/*delete content*/
+.form_content {
+  padding: 20px 30px;
+
+}
+
+.overlay-content .overlay-body {
+  padding: 20px 30px;
+}
+
+.overlay-content {
+  position: relative;
+  margin: 25px auto 25px auto;
+  top: 25%;
+  width: 100%;
+  background-color: #ecf0f1;
+  color: #566787;
+  max-width: 400px;
+  border-radius: 3px;
+	font-size: 14px;
+  
+
+}
+
+.overlay-content .form-control {
+	border-radius: 2px;
+	box-shadow: none;
+	border-color: #ecf0f1;
+}
+
+.overlay-content .modal-footer {
+	background: #6c757d;
+	border-radius: 0 0 3px 3px;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.btn-default{
+  background-color: #f0f0f0;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+
+
+

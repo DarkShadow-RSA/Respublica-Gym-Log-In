@@ -1,0 +1,37 @@
+body {
+    background: #222D32;
+    font-family: 'Roboto', sans-serif;
+    color: #f3f3f3;
+}
+
+.container {
+    background-color: #1A2226;
+    border-radius: 10px;
+    margin-top: 75px;
+    height: auto;
+    width: fit-content;
+    padding: 40px;
+}
+
+.form_head {
+    text-align: center;
+}
+
+.logo {
+    padding: 20px;
+}
+
+.login-title {
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+.login-form {
+    margin: 25px auto 25px auto;
+    text-align: left;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}

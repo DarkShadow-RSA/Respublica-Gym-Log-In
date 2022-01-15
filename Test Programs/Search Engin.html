@@ -1,0 +1,94 @@
+<html>
+<head>
+<script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+</head>
+<style>
+button {
+background: steelblue; 
+border-radius: 4px; 
+height: 40px; 
+width: 100px; 
+color: white; 
+font-size: 20px; 
+cursor: pointer; 
+border: none; 
+}
+button:focus {
+outline: 0; 
+}
+#minutes, #seconds {
+font-size: 40px; 
+}
+.bigger {
+font-size: 40px; 
+}
+.button {
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: hotpink}
+
+.button:active {
+  background-color: hotpink;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+<body>
+        
+    <h2>Respublica GYM Users</h2>
+    
+    
+    <table id="myTable" class="table table-striped" >
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>SMID</th>
+                <th>Time</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>Alfreds </td>
+                <td>Futterkiste</td>
+                <td>22826793</td>
+                <td id="timer1">00:00:00</td>
+                <td>
+                    <input onclick="clicked('myButton1','timer1')" class="actionBTN" type="button" value="Sign In" id="myButton1">
+                </td>
+            </tr>
+            <tr>
+                <td>james </td>
+                <td>Futterkiste</td>
+                <td>22026003</td>
+                <td id="timer2">00:00:00</td>
+                <td                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       >
+                  <input onclick="clicked('myButton2','timer2')" class="actionBTN" type="button" value="Sign In" id="myButton2">
+                </td>
+            </tr>
+
+      </table>
+      
+</body>
+</html>
+<script>
+    var arr = [['t1',1], ['t2',2],['t3',3], ['t4',4]];
+    
+    arr.push(['t6',6])
+
+//arr.splice(2,1)
+for( var i = 0; i < arr.length; i++){ 
+    
+    if ( arr[i][0] === 't6') { 
+
+        arr.splice(i, 1); 
+    }
+
+}
+arr.push(['t10',10])
+console.log(arr[0][0]);
+document.write(arr);
+
+
+
+
+</script>
